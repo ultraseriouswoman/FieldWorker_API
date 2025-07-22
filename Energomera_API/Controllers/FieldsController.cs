@@ -65,7 +65,7 @@ namespace Energomera_API.Controllers
 
                 var result = new DistanceFromCenterToPointResponse()
                 {
-                    Distance = center.DistanceTo(point) * Math.Pow(10, 2)
+                    Distance = center.DistanceTo(point) * 100000
                 };
 
                 response.Result = result;
